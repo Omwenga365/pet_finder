@@ -8,13 +8,13 @@ h2 {
 }
 
 em, p{
-    margin-left: 10px;
+    margin-left: 11px;
 }
 .review {
     padding: 20px 10px;
     border-style: none;
-    border-radius: 20px;
-    background-color: #FEF3D5;
+    border-radius: 21px;
+    background-color: #e5d7b1;
     margin-bottom: 30px;
 }
 
