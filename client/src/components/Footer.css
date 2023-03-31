@@ -139,14 +139,14 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: black;
+    color: rgb(81, 77, 77);
     padding: 14px 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(44, 35, 35);
     transition: all 0.3s ease-out;
 }
 
 .nav-links-mobile:hover {
-    background: rgb(240, 231, 231);
+    background:burlywood ;
     color: #242424;
     transition: 250ms;
 }

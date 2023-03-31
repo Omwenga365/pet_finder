@@ -1,0 +1,92 @@
+.dog-card{
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+  }
+  
+  #pet-list{
+    font-weight: 600;
+    text-align: center;
+    font-family: poppins, serif;
+  }
+  
+  h1{
+    font-weight: 600;
+  }
+  
+  .dog-card h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dog-card h4 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .dog-info p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+  }
+  
+  .bold-text{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .dog-info{
+    width: 100%;
+    min-height: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .dog-info img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .center-btn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .center-btn > div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 1rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .center-btn > div > svg {
+    width: 40px;
+    height: 40px;
+    color: #000505;
+  }
+  
+  .center-btn > div > svg:hover{
+    background-color: #000505;
+    color:#fff;
+    border-radius: 50%;
+  }
