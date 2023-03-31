@@ -126,7 +126,7 @@
 }
 
 .fa-times {
-    color: #00aaff;
+    color: #23b2f9;
     font-size: 2rem;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .nav-links-mobile:hover {
-    background: #fff;
+    background: rgb(240, 231, 231);
     color: #242424;
     transition: 250ms;
 }
