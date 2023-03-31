@@ -1,9 +1,19 @@
 # Controller logic: fallback requests for React Router.
 # Leave this here to help deploy your app later!
-class FallbackController < ActionController::Base
+class FallbackController < ApplicationController
+  def create
+    user = User.find_by(username: params[:username])
+    if user&.authenticate(params[:password])
+      session[:user_id] = user.id
+      render json: user, status: :created
+    else
+      render json: { errors: ["Invalid username or password"] }, status: :unauthorized
+    end
+  end
 
-  def index
-    # React app index page
-    render file: 'public/index.html'
+  def destroy
+    session.delete :user_id
+    head :no_content
   end
 end
+

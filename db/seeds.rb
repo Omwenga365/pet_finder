@@ -45,13 +45,5 @@ end
     )
 end
 
-# Add 3 posts for each dog
-# 3.times do
-#     user_id = User.order("RANDOM()").first.id
-#     Post.create(
-#         description: Faker::Lorem.paragraph,
-#         user_id: user_id,
-#     )
-# end
 
 puts "✅ Done seeding!"
