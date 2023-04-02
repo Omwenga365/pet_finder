@@ -1,0 +1,67 @@
+:root {
+    --primary: white;
+}
+
+.button3 {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid #FEF3D5;
+}
+
+.btn-mobile{
+    padding: 10px;
+}
+
+.button3 {
+    background-color: #FEF3D5;
+    color: black;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+    padding: 8px 20px;
+    font-size: 24px;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--large:hover,
+.btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #000505;
+    color: #fafafa;
+    transition: all 0.3s ease-out;
+}
+
+#sign-login{
+    margin: auto;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    color: #f6f6f6;
+    margin-bottom: 20px;
+    background-color: #FEF3D5;
+    border-radius: 10px;
+}
+
+#sign-login Link{
+    text-decoration: none;
+    background-color: #FEF3D5;
+    color: black;
+    padding: 8px 20px;
+    
+    transition: all 0.3s ease-out;
+}

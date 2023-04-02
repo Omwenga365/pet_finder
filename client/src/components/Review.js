@@ -27,7 +27,7 @@ function Review(){
             <p>
             <b> Post: </b>
             {/* <em>{posts.description}</em> */}
-            <em>I last saw this beautiful Dog Kilway Outside Mall way.</em>
+            <em>I last saw this beautiful Dog at Kilway Outside KiIMall .</em>
             </p>
         </div>
         </div>
