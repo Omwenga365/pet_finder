@@ -2,13 +2,10 @@ class UsersController < ApplicationController
     before_action :authorize, only: [:show]
 
     def create 
-        user = User.create(user_params)
+        user = User.create!(user_params)
         session[:user_id] = user.id
-        if user.valid?
             render json: user, status: :created
-        else 
-            render json: {error: user.errors.full_messages}, status: :unprocessable_entity
-        end
+        
     end
  
     def show
@@ -23,7 +20,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(:username, :email, :password, :password_confirmation)
+        params.permit(:user_name, :email, :password, :id)
     end
 
     def authorize 

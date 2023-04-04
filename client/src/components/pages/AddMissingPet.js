@@ -7,7 +7,7 @@ function AddMissingPet() {
         breed: "",
         image_url: "",
         last_seen: "",
-        user_id: 11
+        user_id: "",
     });
 
     function handleSubmit(event){
@@ -56,15 +56,7 @@ function AddMissingPet() {
                 />
             </label>
             <br />
-            <label className="label">
-                    Owner
-                <input
-                    onChange={(e) => handleChange(e)}
-                    id="owner"
-                    type="number"
-                    value={newData.user_id}
-                    />
-                </label>
+
                 <label className="label">
                     Image_url
                     <input

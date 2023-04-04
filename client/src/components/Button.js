@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function Button({user, setUser}){
 
     function handleLogoutClick(){
-        fetch("", { method: "DELETE" }).then((r) => {
+        fetch("http://localhost:3000/button", { method: "DELETE" }).then((r) => {
             if (r.ok) {
                 setUser(null);
             }

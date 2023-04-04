@@ -18,7 +18,7 @@ return (
         </a>
         </div>
         <div className="hello-section-image">
-            <img src="https://iili.io/HCS8i37.png" alt="hero-paw" />
+            <img src="https://images.pexels.com/photos/33287/dog-viszla-close.jpg?auto=compress&cs=tinysrgb&w=1600" alt="hero-pet" />
         </div>
         
     </div>

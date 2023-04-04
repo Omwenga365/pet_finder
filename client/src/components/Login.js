@@ -10,24 +10,24 @@ function Login({ onLogin, signup }) {
 
     const FormField = styled.div`
         &:not(:last-child) {
-        margin-bottom: 12px;
-    }
-`;
+            margin-bottom: 12px;
+        }
+    `;
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
+        fetch("http://localhost:3000/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ username, password }),
         }).then((r) => {
-        if (r.ok) {
-            r.json().then((user) => onLogin(user));
-        }else {
-            r.json().then((err) => setErrors(err.errors));
-        }
+            if (r.ok) {
+                r.json().then((user) => onLogin(user));
+            } else {
+                r.json().then((err) => setErrors(err.errors));
+            }
         });
     }
 
@@ -59,7 +59,7 @@ function Login({ onLogin, signup }) {
                 </p>
                 <FormField>
                     {errors.map((err) => (
-                    <Errors key={err}>{err}</Errors>
+                        <Errors key={err}>{err}</Errors>
                     ))}
                 </FormField>
             </form>
